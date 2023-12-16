@@ -3,31 +3,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("/imagenes/fondo.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    main {
+      display: flex;
+      flex-direction: colum2sn;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+
+    main>section {
+      position: absolute;
+    }
+
+    section>p {
+      font-size: 5em;
+      color: #e8b923;
+      text-shadow: 5px 5px 5px rgb(41, 41, 41);
+      font-family: 'Great Vibes', cursive;
+      width: auto;
+    }
+
+    main > section > a {
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.192);
+      padding: 1em;
+      margin: 1em 0 0 1em;
+    }
+  </style>
+  
   <title>Document</title>
 </head>
 <body>
   <main>
     <section class="sec_1">
-      <p>A veces...</p>
-    </section>
-    <section class="sec_2">
-      <p>Se necesita un poco de magia...</p>
-    </section>
-    <section class="sec_3">
-      <p>Otras veces...</p>
-    </section>
-    <section class="sec_4">
-      <p>Solo un poco...</p>
-    </section>
-    <section class="sec_5">
-      <p>De imaginacion...</p>
-    </section>
-    <section class="sec_6">
-      <p>Jala el separador para <br /> rasgar el papel!</p>
+      <p>Sube el volumen...</p>
+      <a href="inicio.html">INICIAR</a>
     </section>
   </main>
 </body>
