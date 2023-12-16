@@ -1,5 +1,5 @@
 body {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -9,18 +9,21 @@ main {
   flex-direction: colum2sn;
   justify-content: center;
   align-items: center;
-  width: auto;
   margin: 0 auto;
   text-align: center;
-  positon: relative;
+  position: relative;
 }
 
-main > section {
+main>section {
   position: absolute;
 }
 
-section > h2 {
-  font-size: 3em;
+section>p {
+  font-size: 5em;
+  color: #e8b923;
+  text-shadow: 2px 2px 2px rgb(173, 173, 173);
+  font-family: 'Great Vibes', cursive;
+  width: auto;
 }
 
 .sec_1 {
@@ -73,11 +76,21 @@ section > h2 {
 
 
 @keyframes mostrar_ocultar {
-  0% {opacity: 0;}
-  50% {opacity: 100%}
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100%
+  }
 }
 
 @keyframes mostrar {
-  from {opacity: 0;}
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
 }
