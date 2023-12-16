@@ -1,0 +1,83 @@
+body {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: colum2sn;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  positon: relative;
+}
+
+main > section {
+  position: absolute;
+}
+
+section > h2 {
+  font-size: 3em;
+}
+
+.sec_1 {
+  opacity: 0;
+  animation-name: mostrar_ocultar;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-direction: alternate;
+}
+
+.sec_2 {
+  opacity: 0;
+  animation-name: mostrar_ocultar;
+  animation-duration: 5s;
+  animation-delay: 10s;
+  animation-direction: alternate;
+}
+
+.sec_3 {
+  opacity: 0;
+  animation-name: mostrar_ocultar;
+  animation-duration: 5s;
+  animation-delay: 15s;
+  animation-direction: alternate;
+}
+
+.sec_4 {
+  opacity: 0;
+  animation-name: mostrar_ocultar;
+  animation-duration: 5s;
+  animation-delay: 20s;
+  animation-direction: alternate;
+}
+
+.sec_5 {
+  opacity: 0;
+  animation-name: mostrar_ocultar;
+  animation-duration: 5s;
+  animation-delay: 25s;
+  animation-direction: alternate;
+}
+
+.sec_6 {
+  opacity: 0;
+  animation-name: mostrar;
+  animation-duration: 5s;
+  animation-delay: 30s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes mostrar_ocultar {
+  0% {opacity: 0;}
+  50% {opacity: 100%}
+}
+
+@keyframes mostrar {
+  from {opacity: 0;}
+  to {opacity: 1}
+}
